@@ -36,7 +36,7 @@ jobs:
 
             - name: Init Project Config
               run: |
-                  pnpm install
+                  pnpm install --no-frozen-lockfile
                   pnpm pp:worker
 
             - name: Generate AppIcon
